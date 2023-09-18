@@ -4,8 +4,10 @@
   "main": "dist/index.js",
   "module": "dist/es/index.js",
   "exports": {
-    "import": "./dist/es/index.mjs",
-    "require": "./dist/index.js"
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/index.js"
+    }
   },
   "sideEffects": false,
   "scripts": {
